@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04 Javascript - Vetores</title>
+</head>
+<body>
+    <script>
+        // Solicita o número de pessoas
+        let numPessoas = parseInt(prompt("Digite o número de pessoas:"));
+
+        // Cria um vetor para armazenar os nomes
+        let nomes = [];
+
+        // Lê o nome de cada pessoa e armazena no vetor
+        for (let i = 0; i < numPessoas; i++) {
+            nomes[i] = prompt(`Digite o nome da pessoa ${i + 1}:`);
+        }
+
+        // Imprime os nomes armazenados no vetor
+        alert("Os nomes das pessoas são:\n" + nomes.join('\n'));
+    </script>
+</body>
+</html>

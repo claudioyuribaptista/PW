@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01 Javascript - Vetores</title>
+</head>
+<body>
+    <script>
+        // Criando um vetor para armazenar os valores inteiros
+        let valores = [];
+
+        // Lendo 5 valores inteiros
+        for (let i = 0; i < 5; i++) {
+            valores[i] = parseInt(prompt(`Digite o valor inteiro ${i + 1}:`));  // Solicita um valor inteiro ao usuário e armazena no vetor
+        }
+
+        // Calculando a soma dos valores
+        let soma = 0;
+        for (let i = 0; i < valores.length; i++) {
+            soma += valores[i];  // Soma todos os valores armazenados no vetor
+        }
+
+        // Exibindo o resultado da soma
+        alert(`A soma dos valores é: ${soma}`);
+    </script>
+</body>
+</html>

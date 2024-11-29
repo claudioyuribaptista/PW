@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02 Javascript - Vetores</title>
+</head>
+<body>
+    <script>
+        // Criando um vetor para armazenar os valores numéricos
+        let valores = [];
+
+        // Lendo 10 valores numéricos
+        for (let i = 0; i < 10; i++) {
+            valores[i] = parseFloat(prompt(`Digite o valor ${i + 1}:`));  // Solicita um valor numérico ao usuário e armazena no vetor
+        }
+
+        // Imprimindo os valores na ordem inversa
+        alert("Valores na ordem inversa:\n" + valores.reverse().join('\n'));
+    </script>
+</body>
+</html>

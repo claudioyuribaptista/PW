@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03 Javascript - Vetores</title>
+</head>
+<body>
+    <script>
+        // Criando um vetor para armazenar os valores reais
+        let VET = [];
+
+        // Preenchendo o vetor com 5 números reais
+        for (let i = 0; i < 5; i++) {
+            VET[i] = parseFloat(prompt(`Digite o valor real ${i + 1}:`));  // Solicita um valor real ao usuário e armazena no vetor
+        }
+
+        // Calculando a soma dos valores do vetor
+        let soma = 0;
+        for (let i = 0; i < VET.length; i++) {
+            soma += VET[i];  // Soma todos os valores do vetor
+        }
+
+        // Calculando a média
+        let media = soma / VET.length;
+
+        // Exibindo a média
+        alert(`A média dos valores inseridos é: ${media.toFixed(2)}`);
+    </script>
+</body>
+</html>
